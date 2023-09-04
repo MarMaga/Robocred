@@ -90,7 +90,7 @@ if (isset($_POST['btn_filtrar'])) {
     if ($_POST['btn_filtrar'] == 'ajx') {
 
         if (count($modelos) > 0) {
-            include_once PATH . 'view/adm/tabelas/ModeloEquipamentoTABLE.php';
+            include_once PATH . '/view/adm/tabelas/ModeloEquipamentoTABLE.php';
         } else {
             echo 'NADA';
         }
@@ -111,7 +111,7 @@ if (isset($_POST['btn_filtrar'])) {
     $modelos = $ctrlModeloEq->ConsultarModeloEquipamentoCTRL();
 
     if (count($modelos) > 0) {
-        include_once PATH . 'view/adm/tabelas/ModeloEquipamentoTABLE.php';
+        include_once PATH . '/view/adm/tabelas/ModeloEquipamentoTABLE.php';
     } else {
         echo 'NADA';
     }

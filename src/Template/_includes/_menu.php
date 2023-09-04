@@ -2,145 +2,270 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        
+
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                <li id="menuEquipamentos" class="nav-item has-treeview">
+                <li id="menuCadastros" class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Equipamentos
+                            CADASTROS
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="gerenciar_tipoequipamento.php" id="tiposEquipamentos" class="nav-link">
+                            <a href="clientes.php" id="clientes" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Tipos</p>
+                                <p>Clientes</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="gerenciar_modeloequipamento.php" id="modelosEquipamentos" class="nav-link">
+                            <a href="tipoDocumentos.php" id="tipoDocumentos" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Modelos</p>
+                                <p>Tipos de documentos</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="equipamento.php" id="novoEquipamento" class="nav-link">
+                            <a href="orgaosEmissores.php" id="orgaosEmissores" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Novo</p>
+                                <p>Órgãos emissores</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="consultar_equipamento.php" id="consultarEquipamento" class="nav-link">
+                            <a href="docspessoais.php" id="docspessoais" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Consultar</p>
+                                <p>Documentos pessoais</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="alocar_equipamento.php" id="alocarEquipamento" class="nav-link">
+                            <a href="orgaosPublicos.php" id="orgaosPublicos" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Alocar</p>
+                                <p>Órgãos públicos</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="remover_equipamento.php" id="removerEquipamento" class="nav-link">
+                            <a href="profissoes.php" id="profissoes" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Remover</p>
+                                <p>Profissões</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cargos.php" id="cargos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Cargos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="empregos.php" id="empregos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Empregos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="refpessoais.php" id="refpessoais" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Referências Pessoais</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bancos.php" id="bancos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Bancos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contasbancarias.php" id="contasbancarias" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Contas bancárias</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="cidades.php" id="cidades" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Cidades</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="enderecos.php" id="enderecos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Endereços</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li id="menuUsuario" class="nav-item has-treeview">
+                <li id="menuBradesco" class="nav-item has-treeview">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Usuário
+                            BRADESCO
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="novo_usuario.php" id="novoUsuario" class="nav-link">
+                            <a href="bradescoTabelas.php" id="bradescoTabelas" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Novo</p>
+                                <p>Tabelas</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="consultar_usuario.php" id="consutarUsuario" class="nav-link">
+                            <a href="bradescoConvenios.php" id="bradescoConvenios" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Consultar</p>
+                                <p>Convênios</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoEmpresas.php" id="bradescoEmpresas" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Empresas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoProdutos.php" id="bradescoProdutos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Produtos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoLojas.php" id="bradescoLojas" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Lojas</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoFiliais.php" id="bradescoFiliais" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Filiais</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoOrgaos.php" id="bradescoOrgaos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Órgãos</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoOperacoes.php" id="bradescoOperacoes" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Operações</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li id="menuFuncionario" class="nav-item has-treeview">
+                <li id="menuSenff" class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tree"></i>
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Funcionário
-                            <i class="fas fa-angle-left right"></i>
+                            SENFF
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../funcionario/novo_chamado.php" id="novoChamadoFuncionario" class="nav-link">
+                            <a href="senffTabelas.php" id="senffTabelas" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Novo chamado</p>
+                                <p>Tabelas</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../funcionario/meus_chamados.php" id="meusChamadosFuncionario" class="nav-link">
+                            <a href="senffConvenios.php" id="senffConvenios" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Meus chamados</p>
+                                <p>Convênios</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../funcionario/meus_dados.php" id="meusDadosFuncionario" class="nav-link">
+                            <a href="senffOperacoes.php" id="SenffOperacoes" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Meus dados</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../funcionario/mudar_senha.php" id="mudarSenhaFuncionario" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Mudar senha</p>
+                                <p>Operações</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li id="menuTecnico" class="nav-item has-treeview">
+                <li id="menuFinanceiro" class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Técnico
-                            <i class="fas fa-angle-left right"></i>
+                            FINANCEIRO
+                            <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../tecnico/consultar_chamados.php" id="consultarChamadosTecnico" class="nav-link">
+                            <a href="comissoes.php" id="comissoes" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Consultar chamados</p>
+                                <p>Comissões</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../tecnico/meus_dados.php" id="meusDadosTecnico" class="nav-link">
+                            <a href="fContasBancarias.php" id="fContasBancarias" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Meus dados</p>
+                                <p>Contas bancárias</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../tecnico/mudar_senha.php" id="mudarSenhaTecnico" class="nav-link">
+                            <a href="contasPagar.php" id="contasPagar" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Mudar senha</p>
+                                <p>Contas a pagar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contasReceber.php" id="contasReceber" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Contas a receber</p>
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li id="menuRelatorio" class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            RELATÓRIOS
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="r1.php" id="r1" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>R1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="r2.php" id="r2" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>R2</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="r3.php" id="r3" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>R3</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="r4.php" id="r4" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>R4</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="propostas.php" id="propostas" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>PROPOSTAS</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="usuarios.php" id="usuarios" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>USUÁRIOS</p>
+                    </a>
                 </li>
             </ul>
         </nav>

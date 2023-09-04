@@ -53,7 +53,7 @@ function Maiuscula(ID) {
 }
 
 function AjustarMenu(titulo, menu, item) {
-    document.title = "ControleOS | " + titulo;
+    document.title = "RoboCred | " + titulo;
     $("#" + menu).addClass("menu-open");
     $("#" + item).addClass("active");
 }
