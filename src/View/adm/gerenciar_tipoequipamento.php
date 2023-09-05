@@ -14,7 +14,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
     <div class="wrapper">
 
         <?php
-        //include_once PATH . '/Template/_includes/_topo.php';
+        include_once PATH . '/Template/_includes/_topo.php';
         include_once PATH . '/Template/_includes/_menu.php';
         ?>
 
