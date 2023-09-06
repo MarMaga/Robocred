@@ -107,12 +107,6 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="bradescoTabelas.php" id="bradescoTabelas" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Tabelas</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="bradescoConvenios.php" id="bradescoConvenios" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Convênios</p>
@@ -143,15 +137,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="bradescoOrgaos.php" id="bradescoOrgaos" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Órgãos</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="bradescoOperacoes.php" id="bradescoOperacoes" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Operações</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bradescoTabelas.php" id="bradescoTabelas" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Tabelas</p>
                             </a>
                         </li>
                     </ul>
@@ -166,6 +160,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
+                            <a href="senffOperacoes.php" id="SenffOperacoes" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Operações</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="senffTabelas.php" id="senffTabelas" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Tabelas</p>
@@ -178,9 +178,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="senffOperacoes.php" id="SenffOperacoes" class="nav-link">
+                            <a href="senffEmpregadores.php" id="senffEmpregadores" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Operações</p>
+                                <p>Empregadores</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="senffVinculos.php" id="senffVinculos" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Vínculos</p>
                             </a>
                         </li>
                     </ul>
@@ -195,27 +201,15 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="comissoes.php" id="comissoes" class="nav-link">
+                            <a href="comissoesEntrada.php" id="comissoesEntrada" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Comissões</p>
+                                <p>Comissões - Entrada</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="fContasBancarias.php" id="fContasBancarias" class="nav-link">
+                            <a href="comissoesSaida.php" id="comissoesSaida" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Contas bancárias</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contasPagar.php" id="contasPagar" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Contas a pagar</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contasReceber.php" id="contasReceber" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Contas a receber</p>
+                                <p>Comissões - Saída</p>
                             </a>
                         </li>
                     </ul>
