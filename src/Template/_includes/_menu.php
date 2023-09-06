@@ -255,11 +255,28 @@
                         <p>PROPOSTAS</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="usuarios.php" id="usuarios" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>USUÁRIOS</p>
+                <li id="menuUsuarios" class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            USUÁRIOS
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="agentes.php" id="agentes" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>AGENTES</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="usuarios.php" id="usuarios" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>USUÁRIOS</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
