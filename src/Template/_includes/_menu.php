@@ -250,6 +250,12 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                    <a href="simulador.php" id="simulador" class="nav-link">
+                        <i class="far fa-circle nav-icon"></i>
+                        <p>SIMULADOR</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="propostas.php" id="propostas" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>PROPOSTAS</p>

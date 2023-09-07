@@ -48,7 +48,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                     <!-- <option value="" <?= ($tipoSelected == '') ? 'selected="selected"' : '' ?>>Selecione
                                     </option> -->
                                     <?php foreach (ESTADOS as $estado) { ?>
-                                        <option value="<?= $estado ?>"><?= $estado ?></option>
+                                        <option value="<?= $estado ?>" <?= ($estado=='PR') ? 'selected' : '' ?>><?= $estado ?></option>
                                     <?php } ?>
                                 </select>
                             </div>
