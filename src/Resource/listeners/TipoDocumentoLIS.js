@@ -5,10 +5,10 @@ document.addEventListener('keypress', (e) => {
         e.preventDefault();
 
         if (e.target.id == 'tipo') {
-            // botão chama CadastrarTipoEquipamentoAJAX('formTipo')
+            // botão chama CadastrarTipoDocumentoAJAX('formTipo')
             $("#btn_cadastrar").click();
         } else if (e.target.getAttribute('id') == 'tipo_alterar') {
-            // botão chama AlterarTipoEquipamentoAJAX('formAlt')
+            // botão chama AlterarTipoDocumentoAJAX('formAlt')
             $("#btn_alterar").click();
         }
     }

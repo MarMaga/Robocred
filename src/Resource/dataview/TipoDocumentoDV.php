@@ -1,23 +1,23 @@
 <?php
 
-use Src\VO\TipoEquipamentoVO;
-use Src\Controller\TipoEquipamentoCTRL;
+use Src\VO\TipoDocumentoVO;
+use Src\Controller\TipoDocumentoCTRL;
 
 include_once dirname(__DIR__, 3) . '/vendor/autoload.php';
 
-$ctrlTipoEq = new TipoEquipamentoCTRL();
+$ctrlTipoDoc = new TipoDocumentoCTRL();
 $filtro = "";
 $filtroAtivado = false;
 $tipos[] = "";
 
 if (isset($_POST['btn_cadastrar'])) {
 
-    $voTipoEq = new TipoEquipamentoVO();
+    $voTipoDoc = new TipoDocumentoVO();
 
-    $voTipoEq->setNomeTipoEquipamento($_POST['tipo']);
+    $voTipoDoc->setNomeTipoDocumento($_POST['tipo']);
 
     // consulta se o tipo já está cadastrado
-    $ret = $ctrlTipoEq->FiltrarTipoEquipamentoCTRL($voTipoEq, "S");
+    $ret = $ctrlTipoDoc->FiltrarTipoDocumentoCTRL($voTipoDoc, "S");
 
     // se o tipo já estiver cadastrado
     if (count($ret) == 1) {
@@ -26,7 +26,7 @@ if (isset($_POST['btn_cadastrar'])) {
 
     } else {
 
-        $ret = $ctrlTipoEq->CadastrarTipoEquipamentoCTRL($voTipoEq);
+        $ret = $ctrlTipoDoc->CadastrarTipoDocumentoCTRL($voTipoDoc);
 
     }
 
@@ -43,12 +43,12 @@ if (isset($_POST['btn_cadastrar'])) {
         $ret = -2;
     } else {
 
-        $voTipoEq = new TipoEquipamentoVO();
+        $voTipoDoc = new TipoDocumentoVO();
 
-        $voTipoEq->setIdTipoEquipamento($_POST['id_tipo_alterar']);
-        $voTipoEq->setNomeTipoEquipamento($tipo);
+        $voTipoDoc->setIdTipoDocumento($_POST['id_tipo_alterar']);
+        $voTipoDoc->setNomeTipoDocumento($tipo);
 
-        $ret = $ctrlTipoEq->AlterarTipoEquipamentoCTRL($voTipoEq);
+        $ret = $ctrlTipoDoc->AlterarTipoDocumentoCTRL($voTipoDoc);
     }
 
     if ($_POST['btn_alterar'] == 'ajx') {
@@ -57,11 +57,11 @@ if (isset($_POST['btn_cadastrar'])) {
 
 } elseif (isset($_POST['btn_excluir'])) {
 
-    $voTipoEq = new TipoEquipamentoVO();
+    $voTipoDoc = new TipoDocumentoVO();
 
-    $voTipoEq->setIdTipoEquipamento($_POST['id_excluir']);
+    $voTipoDoc->setIdTipoDocumento($_POST['id_excluir']);
 
-    $ret = $ctrlTipoEq->ExcluirTipoEquipamentoCTRL($voTipoEq);
+    $ret = $ctrlTipoDoc->ExcluirTipoDocumentoCTRL($voTipoDoc);
 
     if ($_POST['btn_excluir'] == 'ajx') {
         echo $ret;
@@ -74,17 +74,17 @@ if (isset($_POST['btn_filtrar'])) {
 
     if ($filtro != "") {
 
-        $voTipoEq = new TipoEquipamentoVO();
+        $voTipoDoc = new TipoDocumentoVO();
 
-        $voTipoEq->setNomeTipoEquipamento($filtro);
+        $voTipoDoc->setNomeTipoDocumento($filtro);
 
-        $tipos = $ctrlTipoEq->FiltrarTipoEquipamentoCTRL($voTipoEq, "F");
+        $tipos = $ctrlTipoDoc->FiltrarTipoDocumentoCTRL($voTipoDoc, "F");
 
         $filtroAtivado = true;
 
     } else {
 
-        $tipos = $ctrlTipoEq->ConsultarTipoEquipamentoCTRL();
+        $tipos = $ctrlTipoDoc->ConsultarTipoDocumentoCTRL();
         $filtroAtivado = false;
 
     }
@@ -92,7 +92,7 @@ if (isset($_POST['btn_filtrar'])) {
     if ($_POST['btn_filtrar'] == 'ajx') {
 
         if (count($tipos) > 0) {
-            include_once PATH . '/view/adm/tabelas/TipoEquipamentoTABLE.php';
+            include_once PATH . '/view/adm/tabelas/TipoDocumentoTABLE.php';
         } else {
             echo 'NADA';
         }
@@ -102,7 +102,7 @@ if (isset($_POST['btn_filtrar'])) {
 
     $filtro = "";
     $filtroAtivado = false;
-    $tipos = $ctrlTipoEq->ConsultarTipoEquipamentoCTRL();
+    $tipos = $ctrlTipoDoc->ConsultarTipoDocumentoCTRL();
 
     if (count($tipos) == 0) {
         echo 'NADA';
@@ -110,10 +110,10 @@ if (isset($_POST['btn_filtrar'])) {
 
 } elseif (isset($_POST['consultar_tipo'])) {
 
-    $tipos = $ctrlTipoEq->ConsultarTipoEquipamentoCTRL();
+    $tipos = $ctrlTipoDoc->ConsultarTipoDocumentoCTRL();
 
     if (count($tipos) > 0) {
-        include_once PATH . '/view/adm/tabelas/TipoEquipamentoTABLE.php';
+        include_once PATH . '/view/adm/tabelas/TipoDocumentoTABLE.php';
     } else {
         echo 'NADA';
     }

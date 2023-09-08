@@ -282,6 +282,12 @@
                                 <p>USUÁRIOS</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="agentesUsuarios.php" id="agentesUsuarios" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>AGENTES DE USUÁRIOS</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>

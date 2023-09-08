@@ -1,5 +1,5 @@
 <?php
-include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
+include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoDocumentoDV.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +25,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h2 class="text-primary">Gerenciar tipos de equipamentos</h2>
-                            <a>Aqui você gerencia todos os tipos de equipamentos</a>
+                            <h2 class="text-primary">Gerenciar tipos de documentos</h2>
+                            <a>Aqui você gerencia todos os tipos de documentos</a>
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
@@ -38,15 +38,15 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
                 <!-- Default box -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Cadastre um novo tipo de equipamento</h3>
+                        <h3 class="card-title">Cadastre um novo tipo de documento</h3>
                     </div>
                     <div class="card-body">
                         <form id="formTipo" method="post" action="gerenciar_tipoequipamento.php">
                             <div class="form-group">
-                                <label>Tipo de equipamento</label>
+                                <label>Tipo de documento</label>
                                 <input class="form-control obg" name="tipo" id="tipo" placeholder="Digite aqui...">
                             </div>
-                            <button type="button" onclick="CadastrarTipoEquipamentoAJAX('formTipo')"
+                            <button type="button" onclick="CadastrarTipoDocumentoAJAX('formTipo')"
                                 class="btn btn-success" name="btn_cadastrar" id="btn_cadastrar">Cadastrar</button>
                         </form>
                     </div>
@@ -95,7 +95,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
                 </div>
         </div>
         <!-- /.card -->
-        <form action="gerenciar_tipoequipamento.php" method="post" id="formAlt">
+        <form action="TipoDocumento.php" method="post" id="formAlt">
             <?php include_once 'modais/alterar_tipo.php'; ?>
         </form>
         <?php include_once 'modais/excluir.php'; ?>
@@ -113,12 +113,12 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/TipoEquipamentoDV.php';
     <!-- ./wrapper -->
 
     <script>
-        AjustarMenu("Convênios", "menuEquipamentos", "tiposEquipamentos");
+        AjustarMenu("Convênios", "menuCadastros", "tipoDocumentos");
         $("#tipo").focus();
     </script>
 
-    <script src="../../Resource/ajax/TipoEquipamentoAJAX.js"></script>
-    <script src="../../Resource/listeners/TipoEquipamentoLIS.js"></script>
+    <script src="../../Resource/ajax/TipoDocumentoAJAX.js"></script>
+    <script src="../../Resource/listeners/TipoDocumentoLIS.js"></script>
 
     <script>
         ConsultarTipo();
