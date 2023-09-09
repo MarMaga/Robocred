@@ -3,6 +3,8 @@
 <title>AdminLTE 3 | Buttons</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap 3.0.1 -->
+<link href="../../Template/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="../../Template/plugins/fontawesome-free/css/all.min.css">
 <!-- Ionicons -->

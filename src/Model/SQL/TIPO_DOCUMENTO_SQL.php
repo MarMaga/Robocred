@@ -6,7 +6,7 @@ class TIPO_DOCUMENTO_SQL
 {
     public static function INSERIR_TIPO_DOCUMENTO(): string
     {
-        $sql = 'INSERT INTO tb_tipoDOCUmento (tipo_DOCUmento) VALUES (?)';
+        $sql = 'INSERT INTO tb_tipoDocumento (nome) VALUES (?)';
 
         return $sql;
     }
@@ -16,9 +16,9 @@ class TIPO_DOCUMENTO_SQL
         if ($comFiltro == "N") {
 
             $sql = 'SELECT id, 
-                       nome 
-                  FROM tb_tipoDocumento
-              ORDER BY nome';
+                           nome 
+                      FROM tb_tipoDocumento
+                  ORDER BY nome';
 
         } else {
 

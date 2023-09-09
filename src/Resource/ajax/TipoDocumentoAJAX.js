@@ -1,4 +1,4 @@
-function CadastrarTipoEquipamentoAJAX(formID) {
+function CadastrarTipoDocumentoAJAX(formID) {
 
     if (NotificarCampos(formID)) {
 
@@ -6,7 +6,7 @@ function CadastrarTipoEquipamentoAJAX(formID) {
 
         $.ajax({
             type: "post",
-            url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+            url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
             data: {
                 tipo: nome,
                 btn_cadastrar: 'ajx'
@@ -15,7 +15,7 @@ function CadastrarTipoEquipamentoAJAX(formID) {
                 MostrarMensagem(ret);
                 ConsultarTipo();
                 LimparNotificacoes(formID);
-                $("#tipo").focus();
+                $("#tipo").trigger('focus');
             }
         })
     }
@@ -25,7 +25,7 @@ function ConsultarTipo() {
 
     $.ajax({
         type: "post",
-        url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+        url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
         data: {
             consultar_tipo: 'ajx'
         },
@@ -55,7 +55,7 @@ function TabelaFiltrada() {
 
     $.ajax({
         type: "post",
-        url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+        url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
         data: {
             btn_filtrar: 'ajx',
             filtroTipo: filtro
@@ -81,7 +81,7 @@ function TabelaFiltrada() {
     })
 }
 
-function AlterarTipoEquipamentoAJAX(formID) {
+function AlterarTipoDocumentoAJAX(formID) {
 
     if (NotificarCampos(formID)) {
         let id = $("#id_tipo_alterar").val();
@@ -90,7 +90,7 @@ function AlterarTipoEquipamentoAJAX(formID) {
 
         $.ajax({
             type: 'post',
-            url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+            url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
             data: {
                 btn_alterar: 'ajx',
                 id_tipo_alterar: id,
@@ -100,7 +100,7 @@ function AlterarTipoEquipamentoAJAX(formID) {
             success: function (ret) {
                 MostrarMensagem(ret);
                 if (ret == -2) {
-                    $("#tipo_alterar").focus();
+                    $("#tipo_alterar").trigger('focus');
                 } else {
                     LimparNotificacoes(formID);
                     ConsultarTipo();
@@ -117,7 +117,7 @@ function Excluir() {
 
     $.ajax({
         type: 'post',
-        url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+        url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
         data: {
             btn_excluir: 'ajx',
             id_excluir: id
@@ -136,7 +136,7 @@ function Filtrar() {
 
     $.ajax({
         type: 'post',
-        url: BASE_URL_DATAVIEW('TipoEquipamentoDV'),
+        url: BASE_URL_DATAVIEW('TipoDocumentoDV'),
         data: {
             btn_filtrar: 'ajx',
             filtroTipo: filtro

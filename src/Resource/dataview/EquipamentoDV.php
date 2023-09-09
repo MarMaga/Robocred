@@ -1,10 +1,10 @@
 <?php
 
-use Src\VO\TipoEquipamentoVO;
+use Src\VO\TipoDocumentoVO;
 use Src\VO\ModeloVO;
 use Src\VO\EquipamentoVO;
 use Src\Controller\EquipamentoCTRL;
-use Src\Controller\TipoEquipamentoCTRL;
+use Src\Controller\TipoDocumentoCTRL;
 use Src\Controller\ModeloEquipamentoCTRL;
 
 include_once dirname(__DIR__, 3) . '/vendor/autoload.php';
@@ -14,8 +14,8 @@ $modeloSelected = '';
 $identificacao = '';
 $descricao = '';
 
-$ctrlTipo = new TipoEquipamentoCTRL();
-$ctrlModelo = new ModeloEquipamentoCTRL();
+$ctrlTipo = new TipoDocumentoCTRL();
+//$ctrlModelo = new ModeloEquipamentoCTRL();
 
 if (isset($_POST['btn_cadastrar'])) {
 
@@ -27,11 +27,11 @@ if (isset($_POST['btn_cadastrar'])) {
     // busca o ID do tipo
     $tipo = $_POST['tipo'];
 
-    $tipoVO = new TipoEquipamentoVO();
+    $tipoVO = new TipoDocumentoVO();
 
-    $tipoVO->setNomeTipoEquipamento($tipo);
+    $tipoVO->setNomeTipoDocumento($tipo);
 
-    $idTipo = $ctrlTipo->FiltrarTipoEquipamentoCTRL($tipoVO, "C")[0]['id'];
+    $idTipo = $ctrlTipo->FiltrarTipoDocumentoCTRL($tipoVO, "C")[0]['id'];
 
     // busca o ID do modelo
     $modelo = $_POST['modelo'];
@@ -40,7 +40,7 @@ if (isset($_POST['btn_cadastrar'])) {
 
     $modeloVO->setNomeModelo($modelo);
 
-    $idModelo = $ctrlModelo->FiltrarModeloEquipamentoCTRL($modeloVO, "C")[0]['id'];
+    //$idModelo = $ctrlModelo->FiltrarModeloEquipamentoCTRL($modeloVO, "C")[0]['id'];
 
     // verifica a existência do equipamento digitado no cadastro
     // confere apenas tipo, modelo e identificação. não confere a descrição
@@ -80,9 +80,9 @@ if (isset($_POST['btn_cadastrar'])) {
 }
 
 // CONSULTA TIPOS
-$tipos = $ctrlTipo->ConsultarTipoEquipamentoCTRL();
+$tipos = $ctrlTipo->ConsultarTipoDocumentoCTRL();
 
 // CONSULTA MODELOS
-$modelos = $ctrlModelo->ConsultarModeloEquipamentoCTRL();
+//$modelos = $ctrlModelo->ConsultarModeloEquipamentoCTRL();
 
 ?>

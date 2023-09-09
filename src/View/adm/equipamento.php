@@ -44,7 +44,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                         <form id="formNovoEq" method="post" action="equipamento.php">
                             <div class="form-group">
                                 <label>UF</label>
-                                <select class="form-control select2 obg" name="uf" id="uf" style="width: auto;">
+                                <select class="form-control select2 obg" name="uf" id="uf" style="width: 80px">
                                     <!-- <option value="" <?= ($tipoSelected == '') ? 'selected="selected"' : '' ?>>Selecione
                                     </option> -->
                                     <?php foreach (ESTADOS as $estado) { ?>
@@ -107,6 +107,10 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
     <script>
         AjustarMenu("Novo equipamento", "menuEquipamentos", "novoEquipamento");
         $("#tipo").focus();
+
+        $(document).ready(function(){
+            $("#uf").editableSelect();
+        });
     </script>
 
 </body>

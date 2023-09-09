@@ -6,7 +6,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/AlocarEquipamentoDV.php';
 <html>
 
 <head>
-    <?php require_once PATH . 'Template/_includes/_head.php'; ?>
+    <?php require_once PATH . '/Template/_includes/_head.php'; ?>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -14,8 +14,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/AlocarEquipamentoDV.php';
     <div class="wrapper">
 
         <?php
-        include_once PATH . 'Template/_includes/_topo.php';
-        include_once PATH . 'Template/_includes/_menu.php';
+        include_once PATH . '/Template/_includes/_topo.php';
+        include_once PATH . '/Template/_includes/_menu.php';
         ?>
 
         <!-- Content Wrapper. Contains page content -->
@@ -67,7 +67,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/AlocarEquipamentoDV.php';
         </div>
         <!-- /.content-wrapper -->
 
-        <?php include_once PATH . 'Template/_includes/_footer.php'; ?>
+        <?php include_once PATH . '/Template/_includes/_footer.php'; ?>
 
     </div>
     <!-- ./wrapper -->
