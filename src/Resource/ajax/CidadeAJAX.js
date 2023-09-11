@@ -38,6 +38,12 @@ function ConsultarCidade() {
                 $("#pesquisa").hide();
                 $("#AltereOuExclua").addClass("d-none").removeClass("d-block");
                 $("#tableResult").hide();
+            } else if (cidades == -1) {
+                $("#barraTituloFiltro").addClass("d-block").addClass("bg-danger").removeClass("d-none").removeClass("bg-info").removeClass("bg-success").removeClass("bg-warning");
+                $("#tituloFiltro").html("Ocorreu um erro na consulta do cadastro");
+                $("#pesquisa").hide();
+                $("#AltereOuExclua").addClass("d-none").removeClass("d-block");
+                $("#tableResult").hide();
             } else {
                 $("#filtroCidade").val('');
                 $("#barraTituloFiltro").addClass("d-block").removeClass("d-none").addClass("bg-info").removeClass("bg-warning").removeClass("bg-success").removeClass("bg-danger");
@@ -112,7 +118,8 @@ function AlterarCidadeAJAX(formID) {
                     ConsultarCidade();
                     $("#alterarCidade").modal("hide");
                 }
-      Cidade  }
+                Cidade
+            }
         })
     }
 }

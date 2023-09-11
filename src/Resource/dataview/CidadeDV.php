@@ -115,9 +115,13 @@ if (isset($_POST['btn_filtrar'])) {
 
     $cidades = $ctrlCidade->ConsultarCidadeCTRL();
 
-    if (count($cidades) > 0) {
-        include_once PATH . '/view/adm/tabelas/CidadeTABLE.php';
+    if ($cidades == -1) {
+            echo -1;
     } else {
-        echo 'NADA';
+        if (count($cidades) > 0) {
+            include_once PATH . '/view/adm/tabelas/CidadeTABLE.php';
+        } else {
+            echo 'NADA';
+        }
     }
 }

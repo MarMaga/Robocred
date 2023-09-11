@@ -112,9 +112,13 @@ if (isset($_POST['btn_filtrar'])) {
 
     $tipos = $ctrlTipoDoc->ConsultarTipoDocumentoCTRL();
 
-    // if (count($tipos) > 0) {
-    //     include_once PATH . '/view/adm/tabelas/TipoDocumentoTABLE.php';
-    // } else {
-    //     echo 'NADA';
-    // }
+    if ($tipos == -1) {
+        echo -1;
+    } else {
+        if (count($tipos) > 0) {
+            include_once PATH . '/view/adm/tabelas/TipoDocumentoTABLE.php';
+        } else {
+            echo 'NADA';
+        }
+    }
 }
