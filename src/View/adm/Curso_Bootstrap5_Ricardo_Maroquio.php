@@ -20,6 +20,25 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 </head>
 
 <body>
+    <!-- CORES E OPACIDADE -->
+    <!-- 8 cores temáticas: primary, secondary, success, danger, warning, info, light, dark, white, transparent -->
+    <!-- bg-gradient = degradê -->
+    <!-- OPACIDADE: opacity-50 = 50% de opacidade -->
+    <div class="container">
+        <h1>Cores e opacidade</h1>
+        <p class="bg-primary bg-gradient">Primary</p>
+        <p class="bg-secondary">Secondary</p>
+        <p class="bg-success">Success</p>
+        <p class="bg-danger">Danger</p>
+        <p class="bg-warning">Warning</p>
+        <p class="bg-info">Info</p>
+        <p class="bg-light">Light</p>
+        <p class="bg-dark opacity-25">Dark</p>
+        <p class="bg-white">White</p>
+        <p class="bg-transparent">Transparent</p>
+    </div>
+    <hr>
+
     <!-- TABELAS -->
     <div class="container">
         <!-- table-striped = linhas listradas -->
@@ -351,31 +370,31 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
     <!-- GRID -->
     <div class="container">
         <div class="row">
-            <div class="col bg-info bg-opacity-50 h400"></div>
-            <div class="col-9 bg-danger bg-opacity-75 h400"></div>
-            <div class="col bg-info bg-opacity-50 h400"></div>
+            <div class="col bg-info opacity-50 h400"></div>
+            <div class="col-9 bg-danger opacity-75 h400"></div>
+            <div class="col bg-info opacity-50 h400"></div>
         </div>
     </div>
     <hr>
     <div class="container">
         <div class="row">
-            <div class="col bg-warning bg-opacity-50 h100"></div>
+            <div class="col bg-warning opacity-50 h100"></div>
         </div>
         <div class="row">
-            <div class="col-3 bg-info bg-opacity-75 h400"></div>
-            <div class="col-9 bg-dark bg-opacity-75 h400"></div>
+            <div class="col-3 bg-info opacity-75 h400"></div>
+            <div class="col-9 bg-dark opacity-75 h400"></div>
         </div>
         <div class="row">
-            <div class="col bg-warning bg-opacity-50 h100"></div>
+            <div class="col bg-warning opacity-50 h100"></div>
         </div>
     </div>
     <hr>
     <div class="container">
         <div class="row">
-            <div class="col-12 bg-warning bg-opacity-50 h100"></div>
-            <div class="col-12 col-sm-3 bg-info bg-opacity-75 h400"></div>
-            <div class="col-12 col-sm-9 bg-dark bg-opacity-75 h400"></div>
-            <div class="col-12 bg-warning bg-opacity-50 h100"></div>
+            <div class="col-12 bg-warning opacity-50 h100"></div>
+            <div class="col-12 col-sm-3 bg-info opacity-75 h400"></div>
+            <div class="col-12 col-sm-9 bg-dark opacity-75 h400"></div>
+            <div class="col-12 bg-warning opacity-50 h100"></div>
         </div>
     </div>
     <hr>
