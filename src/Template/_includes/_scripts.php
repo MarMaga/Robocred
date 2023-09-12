@@ -1,5 +1,6 @@
 <!-- jQuery -->
 <script src="../../Template/plugins/jquery/jquery.min.js"></script>
+<<<<<<< HEAD
 <!-- Bootstrap 5.0.2 -->
 <script src="../../Template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Toastr -->
