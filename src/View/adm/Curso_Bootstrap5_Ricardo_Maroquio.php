@@ -2,7 +2,7 @@
 include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <?php require_once PATH . '/Template/_includes/_head.php'; ?>
@@ -20,6 +20,13 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 </head>
 
 <body>
+
+
+
+
+
+
+
     <!-- CORES E OPACIDADE -->
     <!-- 8 cores temáticas: primary, secondary, success, danger, warning, info, light, dark, white, transparent -->
     <!-- bg-gradient = degradê -->
@@ -29,7 +36,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
         <p class="bg-primary bg-gradient">Primary</p>
         <p class="bg-secondary">Secondary</p>
         <p class="bg-success">Success</p>
-        <p class="bg-danger">Danger</p>
+        <p class="bg-danger opacity-75">Danger</p>
         <p class="bg-warning">Warning</p>
         <p class="bg-info">Info</p>
         <p class="bg-light">Light</p>
@@ -227,7 +234,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
         <!-- <img src="../../../mesacafe.jpg" alt="Imagem responsiva" class="rounded"> -->
 
         <!-- imagens flutuantes -->
-        <img src="../../../mesacafe.jpg" alt="Imagem responsiva" class="img-thumbnail float-end ms-3"
+        <img src="../../../mesacafe.jpg" alt="Imagem responsiva" class="opacity-50 img-thumbnail float-end ms-3"
             style="max-width: 10%; height: auto">
         <p class="lead text-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, itaque alias. Sint,
             nesciunt non

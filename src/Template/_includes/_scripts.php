@@ -1,7 +1,7 @@
 <!-- jQuery -->
 <script src="../../Template/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 3.0.1 -->
-<script src="../../Template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../Template/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Toastr -->
 <!-- <script src="../../Template/plugins/toastr/toastr.min.js"></script> -->
 <!-- AdminLTE App -->

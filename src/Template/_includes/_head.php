@@ -1,11 +1,11 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>AdminLTE 3 | Buttons</title>
+<title>RoboCred Bootstrap 5</title>
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap 3.0.1 -->
 <!-- Bootstrap 5.3.1 -->
-<link href="../../Template/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../Template/dist/css/bootstrap.min.css" rel="stylesheet">
 <!-- Font Awesome -->
 <!-- <link rel="stylesheet" href="../../Template/plugins/fontawesome-free/css/all.min.css"> -->
 <!-- Ionicons -->
