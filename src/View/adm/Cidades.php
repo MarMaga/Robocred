@@ -6,7 +6,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 <html>
 
 <head>
-    <link href="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.css"
+    <link href="../../../node_modules/jquery-editable-select/src/jquery-editable-select.css"
         rel="stylesheet">
     <?php require_once PATH . '/Template/_includes/_head.php'; ?>
 </head>
@@ -141,7 +141,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
     <script src="../../Resource/listeners/CidadeLIS.js"></script>
     
     <!-- Editable select option -->
-    <script src="//rawgithub.com/indrimuska/jquery-editable-select/master/dist/jquery-editable-select.min.js"></script>
+    <script src="../../../node_modules/jquery-editable-select/src/jquery-editable-select.js"></script>
 
     <script>
         ConsultarCidade();
