@@ -2,7 +2,7 @@
 <script src="../../Template/plugins/jquery/jquery.min.js"></script>
 <<<<<<< HEAD
 <!-- Bootstrap 5.0.2 -->
-<script src="../../Template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../Template/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Toastr -->
 <script src="../../Template/plugins/toastr/toastr.min.js"></script>
 <!-- Ionicons -->

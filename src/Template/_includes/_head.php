@@ -4,7 +4,9 @@
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap 5.0.2 -->
-<link href="../../Template/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../../Template/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons 1.10.5 -->
+<link href="../../../vendor/twbs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="../../Template/plugins/fontawesome-free/css/all.min.css">
 <!-- Ionicons -->

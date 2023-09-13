@@ -20,17 +20,90 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 </head>
 
 <body>
+    <!-- FORMATAÇÃO DE TEXTOS -->
+    <!-- text-start, center, end = alinha à esquerda, centro e direita -->
+    <!-- aceita breakpoints: text-sm-start -->
+    <!-- text-nowrap = não quebra o texto no final direito da página -->
+    <!-- text-break = quebra uma palavra muito grande que não é quebrada por padrão pelo navegador -->
+    <!-- text-lowercase = todo o texto em minúscula -->
+    <!-- text-uppercase = todo o texto em maiúscula -->
+    <!-- text-capitalize = as primeiras letras de cada palavra em maiúscula -->
+    <!-- fs-1 a fs-6 (fs=font size) = tamanho do texto correspondente aos tamanhos de H1 a H6 -->
+    <div class="container text-capitalize">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, odio omnis! Ducimus, consequuntur ex eum
+            facere culpa commodi? Sed nesciunt, atque doloremque fugiat magnam saepe dolore corrupti. Tempore, esse
+            ullam?
+        </p>
+    </div>
 
+    <!-- BORDAS E SOMBRAS -->
+    <!-- border, border-top, border-bottom, border-start, border-end -->
+    <!-- rounded = arrodenddamento nas bordas -->
+    <!-- rounded-0 a rounded-5 = intensidade do arredondamento -->
+    <!-- rounded-top, bottom, star, end não permitem especificar a intensidade -->
+    <!-- rounded-pill = formato de pílula -->
+    <!-- rounded-circle = formato de elipse e, se o elemento for quadrado, formato de círculo -->
+    <!-- border-{cor temática} -->
+    <!-- border-0 a border-5 = espessura da borda -->
+    <!-- border-opacity-50 -->
+    <!-- shadow-none = remove a sombra -->
+    <!-- shadow-sm = sombra pequena; shadow = sombra média; shadow-lg = sobra maior -->
+    <!-- NÃO POSSUEM RESPONSIVIDADE NO BOOTSTRAP 5 -->
+    <div class="container p-5">
+        <div class="col-4 mx-auto p-5 bg-success border border-dark border-3 border-opacity-50">
 
+        </div>
+    </div>
+    <hr>
 
+    <!-- MARGENS E PADDINGS -->
+    <!-- m-0 a m-5 = margens -->
+    <!-- padrão é com uma pequena margem. m-0 remove todas as margens -->
+    <!-- p-0 a p-5 = paddings -->
+    <!-- ms-0/ps-0 = margem e padding esquerda (s=start) -->
+    <!-- me-0/pe-0 = direita (e=end) -->
+    <!-- mt-0/pt-0 = superior (t=top) -->
+    <!-- mb-0/pb-0 = inferior (b=bottom) -->
+    <!-- mx-0/px-0 = esquerda e direita (x=eixo x) -->
+    <!-- my-0/py-0 = superior e inferior (y=eixo y) -->
+    <!-- mx-auto = centraliza dividindo as margens lateriais igualmente -->
+    <!-- Nos breakpoint: por exemplo: m-sm-0 -->
+    <div class="container">
+        <p class="bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, tempore provident nam
+            placeat aperiam ipsum excepturi totam est nisi neque?</p>
+        <p class="bg-danger m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates at dolore eos
+            minima rem nihil culpa officia sint sit tempora?</p>
+        <p class="bg-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo tempore commodi sint
+            vitae laborum odio! Maxime tenetur saepe esse tempore.</p>
+    </div>
+    <hr>
 
-
-
+    <!-- ICONES -->
+    <!-- para alterar a cor, há duas formas: -->
+    <!-- 1. font-{cor temática} -->
+    <!-- 2. style="color: red" -->
+    <!-- bootstrap icons. instalar: composer require bootstrap-icons + usar link em <head> -->
+    <div class="container p-5">
+        Bootstrap Icons
+        <i class="bi-house-check text-info" style="font-size: 64px"></i>
+    </div>
+    <!-- fontawesome-free. download + usar link em <head> -->
+    <div class="container p-5">
+        FontAwesome-Free
+        <i class="fa-solid fa-house-circle-check" style="font-size: 64px; color: blue"></i>
+    </div>
+    <hr>
 
     <!-- CORES E OPACIDADE -->
     <!-- 8 cores temáticas: primary, secondary, success, danger, warning, info, light, dark, white, transparent -->
+    <!-- text-{cor temática} = muda a cor do texto -->
     <!-- bg-gradient = degradê -->
     <!-- OPACIDADE: opacity-50 = 50% de opacidade -->
+    <!-- text-opacity-50 = opacidade do texto -->
+    <!-- text-white = texto branco -->
+    <!-- text-muted = desbota o texto. menos destacado -->
+    <!-- text-bg-{cor temática} = define a cor do fundo com uma cor do texto com bom contraste -->
+    <!-- link-{cor temática} = define a cor do link -->
     <div class="container">
         <h1>Cores e opacidade</h1>
         <p class="bg-primary bg-gradient">Primary</p>
