@@ -1,9 +1,9 @@
-<footer class="main-footer fixed-bottom">
+<!-- <footer class="main-footer fixed-bottom">
     <div class="float-right d-none d-sm-block">
         <b>Versão</b> 1.0.0
     </div>
     <strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos reservados.
-</footer>
+</footer> -->
 
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">

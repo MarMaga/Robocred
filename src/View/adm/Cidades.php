@@ -6,8 +6,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
 <html>
 
 <head>
-    <link href="../../../node_modules/jquery-editable-select/src/jquery-editable-select.css"
-        rel="stylesheet">
+    <link href="../../../node_modules/jquery-editable-select/src/jquery-editable-select.css" rel="stylesheet">
     <?php require_once PATH . '/Template/_includes/_head.php'; ?>
 </head>
 
@@ -135,11 +134,12 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
         $(document).ready(function () {
             $("#estado").editableSelect();
         });
+
     </script>
 
     <script src="../../Resource/ajax/CidadeAJAX.js"></script>
     <script src="../../Resource/listeners/CidadeLIS.js"></script>
-    
+
     <!-- Editable select option -->
     <script src="../../../node_modules/jquery-editable-select/src/jquery-editable-select.js"></script>
 
