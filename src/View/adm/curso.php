@@ -127,7 +127,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/CidadeDV.php';
         <!-- table-bordered = com bordas externas e internas -->
         <!-- table-borderless = sem bordas -->
         <!-- table-active = destaca uma linha específica -->
-        <!-- table-sm = reduz pela metade o padding das células, diminuindo o tamanho da tabela pela metade -->
+        <!-- table-sm = reduz pela metade o padding das células, diminuindo o tamanho da tabela -->
         <!-- align-middle = alinha verticalmente no meio -->
         <!-- caption-top = mostra o título de <caption> no topo da tabela -->
         <table class="table table-primary table-striped table-hover table-borderless table-sm caption-top">

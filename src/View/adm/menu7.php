@@ -417,6 +417,25 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             z-index: 1000;
         }
 
+        .dashboard-footer {
+            min-height: 84px;
+            background-color: #dfdfdf;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            /* padding: 1px 27px; */
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
         .nav-item-divider {
             height: 1px;
             margin: 1rem 0;
@@ -476,15 +495,14 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             }
         }
     </style>
+
 </head>
 
 <body>
-
     <div class='dashboard'>
         <div class="dashboard-nav">
             <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"><i
                         class="fas fa-anchor"></i> <span>BRAND</span></a></header>
-                        <hr class="text-white" style="margin-top: 0px">
             <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><i class="fas fa-home"></i>
                     Home </a><a href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i>
                     dashboard
@@ -498,8 +516,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                             class="dashboard-nav-dropdown-item">Video</a></div>
                 </div>
                 <div class='dashboard-nav-dropdown'><a href="#!"
-                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users"></i> Users
-                    </a>
+                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users"></i> Users </a>
                     <div class='dashboard-nav-dropdown-menu'><a href="#" class="dashboard-nav-dropdown-item">All</a><a
                             href="#" class="dashboard-nav-dropdown-item">Subscribed</a><a href="#"
                             class="dashboard-nav-dropdown-item">Non-subscribed</a><a href="#"
@@ -520,23 +537,23 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                 <a href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
             </nav>
         </div>
-    </div>
-    <div class='dashboard-app'>
-        <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
-        <div class='dashboard-content'>
-            <div class='container'>
-                <div class='card'>
-                    <div class='card-header'>
-                        <h1>Welcome back Jim</h1>
-                    </div>
-                    <div class='card-body'>
-                        <p>Your account type is: Administrator</p>
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                <div class='container'>
+                    <div class='card'>
+                        <div class='card-header'>
+                            <h1>Welcome back Jim</h1>
+                        </div>
+                        <div class='card-body'>
+                            <p>Your account type is: Administrator</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <?php include_once PATH . '../Template/_includes/_footer.php'; ?>
 
     <script>
@@ -554,12 +571,12 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             $(".menu-toggle").click(function () {
                 if (mobileScreen.matches) {
                     $(".dashboard-nav").toggleClass("mobile-show");
+                    $(".dashboard-footer").toggleClass("mobile-show");
                 } else {
                     $(".dashboard").toggleClass("dashboard-compact");
+                    $(".dashboard-footer").toggleClass("dashboard-compact");
                 }
             });
         });
     </script>
 </body>
-
-</html>
