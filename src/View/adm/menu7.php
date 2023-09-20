@@ -500,7 +500,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
 
 <body>
     <div class='dashboard'>
-        <div class="dashboard-nav">
+        <div class="dashboard-nav position-absolute">
             <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"><i
                         class="fas fa-anchor"></i> <span>BRAND</span></a></header>
             <hr class="text-white" style="margin-top: 0px">
@@ -556,7 +556,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                     </div>
                 </div>
             </div>
-            <footer class="main-footer fixed-bottom"
+            <footer class="main-footer fixed-bottom position-relative"
                 style="background-color: white; padding-top: 10px; padding-left: 10px; padding-right: 10px">
                 <div class="text-end float-end d-none d-sm-block ms-lg-5 ms-0">
                     <h6><b>Versão</b> 1.0.0</h6>
