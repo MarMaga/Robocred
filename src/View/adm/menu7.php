@@ -503,6 +503,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         <div class="dashboard-nav">
             <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"><i
                         class="fas fa-anchor"></i> <span>BRAND</span></a></header>
+            <hr class="text-white" style="margin-top: 0px">
             <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><i class="fas fa-home"></i>
                     Home </a><a href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i>
                     dashboard

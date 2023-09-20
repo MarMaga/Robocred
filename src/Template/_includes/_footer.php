@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer class="dashboard-footer"
     style="background-color: white; padding-top: 10px; padding-left: 10px; padding-right: 10px">
     <div class="text-end float-end d-none d-sm-block col-10">
@@ -14,6 +15,15 @@
             reservados.</h6>
     </div>
 </footer> -->
+=======
+<!-- <footer class="main-footer fixed-bottom">
+    <div class="float-right d-none d-sm-block">
+        <b>Versão</b> 1.0.0
+    </div>
+    <strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos reservados.
+</footer> -->
+
+>>>>>>> 260de9a8c9f1203f58efab29e21f6590ec387621
 <!-- Control Sidebar -->
 <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->

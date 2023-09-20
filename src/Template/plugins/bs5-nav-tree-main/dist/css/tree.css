@@ -1,0 +1,18 @@
+.nt-li:focus,
+.nt-li.active {
+  color: white;
+  background-color: #1e42e2;
+  border-radius: 5px;
+}
+
+.nt-li:focus *,
+.nt-li.active * {
+  color: white!important;
+  border-radius: 5px;
+}
+
+.nt-li>.d-flex:hover {
+  color: white;
+  background-color: #076bcf;
+  border-radius: 5px;
+}
