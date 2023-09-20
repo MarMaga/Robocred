@@ -418,7 +418,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-footer {
-            min-height: 84px;
+            min-height: 30px;
             background-color: #dfdfdf;
             display: -webkit-box;
             display: -webkit-flex;
@@ -539,7 +539,11 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             </nav>
         </div>
         <div class='dashboard-app'>
-            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
+            <header class='dashboard-toolbar'>
+                <a href="#!" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </header>
             <div class='dashboard-content'>
                 <div class='container'>
                     <div class='card'>
@@ -552,10 +556,22 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                     </div>
                 </div>
             </div>
+            <footer class="main-footer fixed-bottom"
+                style="background-color: white; padding-top: 10px; padding-left: 10px; padding-right: 10px">
+                <div class="text-end float-end d-none d-sm-block ms-lg-5 ms-0">
+                    <h6><b>Versão</b> 1.0.0</h6>
+                    <h6><strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os
+                        direitos
+                        reservados.</h6>
+                </div>
+            </footer>
         </div>
     </div>
-    
-    <?php include_once PATH . '../Template/_includes/_footer.php'; ?>
+
+    <?php
+    include_once PATH . '/Template/_includes/_scripts.php';
+    include_once PATH . '/Template/_includes/_msg.php';
+    ?>
 
     <script>
         const mobileScreen = window.matchMedia("(max-width: 990px )");
@@ -572,10 +588,10 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             $(".menu-toggle").click(function () {
                 if (mobileScreen.matches) {
                     $(".dashboard-nav").toggleClass("mobile-show");
-                    $(".dashboard-footer").toggleClass("mobile-show");
+                    // $(".dashboard-footer").toggleClass("mobile-show");
                 } else {
                     $(".dashboard").toggleClass("dashboard-compact");
-                    $(".dashboard-footer").toggleClass("dashboard-compact");
+                    // $(".dashboard-footer").toggleClass("dashboard-compact");
                 }
             });
         });
