@@ -6,8 +6,7 @@
             reservados.
     </div>
 </footer> -->
-<footer class="main-footer fixed-bottom"
-    style="background-color: white; padding-top: 10px; padding-left: 10px; padding-right: 10px">
+<footer class="main-footer fixed-bottom">
     <div class="text-end float-end d-none d-sm-block ms-lg-5 ms-0">
         <h6><b>Versão</b> 1.0.0</h6>
         <h6><strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos

@@ -210,6 +210,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
 
         .dashboard-nav {
             background-color: #343a40;
+            padding: 10px !important;
         }
 
         .dashboard-nav a {
@@ -284,7 +285,13 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
 
         .active {
             /* background: rgba(0, 0, 0, 0.1); */
-            background: #ebecec;
+            background: #ffffff;
+            color: #343a40 !important;
+        }
+        
+        .active:hover {
+            /* background: rgba(0, 0, 0, 0.1); */
+            background: #ffffff;
             color: #343a40 !important;
         }
 
@@ -349,8 +356,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-nav-dropdown-item {
-            min-height: 40px;
-            padding: 8px 20px 8px 70px;
+            min-height: 50px;
+            padding: 8px 20px 8px 35px;
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -400,7 +407,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
 
         .dashboard-toolbar {
             min-height: 84px;
-            background-color: #dfdfdf;
+            background-color: #ffffff;
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -418,8 +425,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-footer {
-            min-height: 30px;
-            background-color: #dfdfdf;
+            min-height: 55px;
+            background-color: #ffffff;
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -428,12 +435,13 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             -webkit-align-items: center;
             -ms-flex-align: center;
             align-items: center;
-            /* padding: 1px 27px; */
+            /* padding: 8px 27px; */
             position: fixed;
             bottom: 0;
             right: 0;
             left: 0;
             z-index: 1000;
+            padding-top: 10px;
         }
 
         .nav-item-divider {
@@ -490,7 +498,11 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                 left: 238px;
             }
 
-            .dashboard-compact .dashboard-toolbar {
+            .dashboard-footer {
+                left: 238px;
+            }
+
+            .dashboard-compact .dashboard-toolbar .dashboard-footer {
                 left: 0;
             }
         }
@@ -508,13 +520,27 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                     Home </a><a href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i>
                     dashboard
                 </a><a href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Upload </a>
-                <div class='dashboard-nav-dropdown'><a href="#!"
-                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-photo-video"></i>
-                        Media </a>
-                    <div class='dashboard-nav-dropdown-menu'><a href="#" class="dashboard-nav-dropdown-item">All</a><a
-                            href="#" class="dashboard-nav-dropdown-item">Recent</a><a href="#"
-                            class="dashboard-nav-dropdown-item">Images</a><a href="#"
-                            class="dashboard-nav-dropdown-item">Video</a></div>
+                <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fas fa-photo-video"></i>
+                        Media 
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            <i class="fas fa-photo-video"></i>
+                            All
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            <i class="fas fa-photo-video"></i>
+                            Recent
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            Images
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            Video
+                        </a>
+                    </div>
                 </div>
                 <div class='dashboard-nav-dropdown'><a href="#!"
                         class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users"></i> Users </a>
@@ -556,14 +582,16 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                     </div>
                 </div>
             </div>
-            <footer class="main-footer fixed-bottom position-relative"
-                style="background-color: white; padding-top: 10px; padding-left: 10px; padding-right: 10px">
-                <div class="text-end float-end d-none d-sm-block ms-lg-5 ms-0">
-                    <h6><b>Versão</b> 1.0.0</h6>
-                    <h6><strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os
-                        direitos
-                        reservados.</h6>
-                </div>
+            <footer class="dashboard-footer">
+                <!-- <div class="main-footer fixed-bottom position-relative"> -->
+                    <div class="d-sm-block ms-lg-5 ms-0" style="margin-left: 10px !important">
+                        <h6 style="font-size: 12px"><b>Versão</b> 1.0.0</h6>
+                        <h6 style="font-size: 12px"><strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos
+                            os
+                            direitos
+                            reservados.</h6>
+                    </div>
+                <!-- </div> -->
             </footer>
         </div>
     </div>
