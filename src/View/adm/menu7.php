@@ -170,7 +170,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             left: 0;
             top: 0;
             bottom: 0;
-            overflow: auto;
+            /* overflow: auto; */
             background-color: #373193;
         }
 
@@ -288,7 +288,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             background: #ffffff;
             color: #343a40 !important;
         }
-        
+
         .active:hover {
             /* background: rgba(0, 0, 0, 0.1); */
             background: #ffffff;
@@ -425,7 +425,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-footer {
-            min-height: 55px;
+            min-height: 25px;
             background-color: #ffffff;
             display: -webkit-box;
             display: -webkit-flex;
@@ -435,7 +435,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             -webkit-align-items: center;
             -ms-flex-align: center;
             align-items: center;
-            /* padding: 8px 27px; */
+            padding: 10px 0px;
             position: fixed;
             bottom: 0;
             right: 0;
@@ -447,7 +447,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         .nav-item-divider {
             height: 1px;
             margin: 1rem 0;
-            overflow: hidden;
+            /* overflow: hidden; */
             background-color: rgba(236, 238, 239, 0.3);
         }
 
@@ -502,9 +502,10 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                 left: 238px;
             }
 
-            .dashboard-compact .dashboard-toolbar .dashboard-footer {
+            .dashboard-compact .dashboard-toolbar {
                 left: 0;
             }
+
         }
     </style>
 
@@ -512,60 +513,111 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
 
 <body>
     <div class='dashboard'>
-        <div class="dashboard-nav position-absolute">
-            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="#" class="brand-logo"><i
-                        class="fas fa-anchor"></i> <span>BRAND</span></a></header>
+        <div class="dashboard-nav">
+            <header>
+                <a href="#!" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="#" class="brand-logo">
+                    <i class="fas fa-anchor"></i>
+                    <span>BRAND</span>
+                </a>
+            </header>
             <hr class="text-white" style="margin-top: 0px">
-            <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><i class="fas fa-home"></i>
-                    Home </a><a href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i>
+            <nav class="dashboard-nav-list">
+                <a href="#" class="dashboard-nav-item">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a href="#" class="dashboard-nav-item active">
+                    <i class="fas fa-tachometer-alt"></i>
                     dashboard
-                </a><a href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Upload </a>
+                </a>
+                <a href="#" class="dashboard-nav-item">
+                    <i class="fas fa-file-upload"></i>
+                    Upload
+                </a>
                 <div class='dashboard-nav-dropdown'>
                     <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
                         <i class="fas fa-photo-video"></i>
-                        Media 
+                        Media
                     </a>
                     <div class='dashboard-nav-dropdown-menu'>
                         <a href="#" class="dashboard-nav-dropdown-item">
                             <i class="fas fa-photo-video"></i>
-                            All
+                            <span style="margin-left: 10px">All</span>
                         </a>
                         <a href="#" class="dashboard-nav-dropdown-item">
                             <i class="fas fa-photo-video"></i>
+                            <span style="margin-left: 10px">All</span>
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            <i class="fas fa-photo-video"></i>
+                            <span style="margin-left: 10px">All</span>
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            <i class="fas fa-photo-video"></i>
+                            <span style="margin-left: 10px">All</span>
+                        </a>
+                    </div>
+                </div>
+                <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fas fa-users"></i>
+                        Users
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            All
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            Subscribed
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            Non-subscribed
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            Banned
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            New
+                        </a>
+                    </div>
+                </div>
+                <div class='dashboard-nav-dropdown'>
+                    <a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle">
+                        <i class="fas fa-money-check-alt"></i>
+                        Payments
+                    </a>
+                    <div class='dashboard-nav-dropdown-menu'>
+                        <a href="#" class="dashboard-nav-dropdown-item">
+                            All
+                        </a>
+                        <a href="#" class="dashboard-nav-dropdown-item">
                             Recent
                         </a>
                         <a href="#" class="dashboard-nav-dropdown-item">
-                            Images
-                        </a>
-                        <a href="#" class="dashboard-nav-dropdown-item">
-                            Video
+                            Projections
                         </a>
                     </div>
                 </div>
-                <div class='dashboard-nav-dropdown'><a href="#!"
-                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users"></i> Users </a>
-                    <div class='dashboard-nav-dropdown-menu'><a href="#" class="dashboard-nav-dropdown-item">All</a><a
-                            href="#" class="dashboard-nav-dropdown-item">Subscribed</a><a href="#"
-                            class="dashboard-nav-dropdown-item">Non-subscribed</a><a href="#"
-                            class="dashboard-nav-dropdown-item">Banned</a><a href="#"
-                            class="dashboard-nav-dropdown-item">New</a></div>
-                </div>
-                <div class='dashboard-nav-dropdown'><a href="#!"
-                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-money-check-alt"></i>
-                        Payments </a>
-                    <div class='dashboard-nav-dropdown-menu'><a href="#" class="dashboard-nav-dropdown-item">All</a><a
-                            href="#" class="dashboard-nav-dropdown-item">Recent</a><a href="#"
-                            class="dashboard-nav-dropdown-item"> Projections</a>
-                    </div>
-                </div>
-                <a href="#" class="dashboard-nav-item"><i class="fas fa-cogs"></i> Settings </a><a href="#"
-                    class="dashboard-nav-item"><i class="fas fa-user"></i> Profile </a>
+                <a href="#" class="dashboard-nav-item">
+                    <i class="fas fa-cogs"></i>
+                    Settings
+                </a>
+                <a href="#" class="dashboard-nav-item">
+                    <i class="fas fa-user"></i>
+                    Profile
+                </a>
                 <div class="nav-item-divider"></div>
-                <a href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+                <a href="#" class="dashboard-nav-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                </a>
             </nav>
         </div>
         <div class='dashboard-app'>
-            <header class='dashboard-toolbar'>
+            <header class='dashboard-toolbar' id='toolbar'>
                 <a href="#!" class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </a>
@@ -579,18 +631,104 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                         <div class='card-body'>
                             <p>Your account type is: Administrator</p>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla ad alias nobis vero
+                            animi laudantium ea ipsa repellat aliquid fugiat consectetur deleniti ullam, maxime totam
+                            nesciunt earum rem corrupti perspiciatis quidem numquam! Cupiditate, dolore maiores? Sint
+                            consectetur repellendus animi porro laborum aliquam quas quidem impedit vel dolore, ipsum
+                            quos id deserunt rem voluptates voluptatibus temporibus beatae, sequi nemo, corporis ea! At
+                            excepturi beatae non deleniti iure earum similique dolores sit assumenda maxime id provident
+                            doloremque est, natus itaque, quae tenetur doloribus magnam! Qui commodi harum sint, ad
+                            voluptatibus consequuntur veniam ea. Aspernatur repellendus aliquid pariatur, quibusdam
+                            veniam tempora cum, nostrum iusto molestias commodi aperiam vel, tempore nemo optio unde? Ab
+                            doloremque, laboriosam neque voluptates numquam nobis esse saepe, odio praesentium ipsa modi
+                            laborum possimus officiis distinctio voluptatibus quo vero. Accusamus neque ea excepturi, ad
+                            quae omnis, provident numquam ratione quaerat eos tempora odio aperiam id. Deserunt quae
+                            ratione placeat perspiciatis facilis voluptas soluta fugit quis illum nemo reiciendis
+                            voluptatum eius consequuntur nihil neque esse dolores, tempore beatae deleniti aperiam
+                            officia nesciunt unde iste harum. Ad, hic? Iure mollitia vitae inventore delectus architecto
+                            quaerat quibusdam voluptate facere vel, accusamus natus? Iste, nam! Odio fugiat veniam animi
+                            alias quis? Porro, magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla ad alias nobis vero
+                            animi laudantium ea ipsa repellat aliquid fugiat consectetur deleniti ullam, maxime totam
+                            nesciunt earum rem corrupti perspiciatis quidem numquam! Cupiditate, dolore maiores? Sint
+                            consectetur repellendus animi porro laborum aliquam quas quidem impedit vel dolore, ipsum
+                            quos id deserunt rem voluptates voluptatibus temporibus beatae, sequi nemo, corporis ea! At
+                            excepturi beatae non deleniti iure earum similique dolores sit assumenda maxime id provident
+                            doloremque est, natus itaque, quae tenetur doloribus magnam! Qui commodi harum sint, ad
+                            voluptatibus consequuntur veniam ea. Aspernatur repellendus aliquid pariatur, quibusdam
+                            veniam tempora cum, nostrum iusto molestias commodi aperiam vel, tempore nemo optio unde? Ab
+                            doloremque, laboriosam neque voluptates numquam nobis esse saepe, odio praesentium ipsa modi
+                            laborum possimus officiis distinctio voluptatibus quo vero. Accusamus neque ea excepturi, ad
+                            quae omnis, provident numquam ratione quaerat eos tempora odio aperiam id. Deserunt quae
+                            ratione placeat perspiciatis facilis voluptas soluta fugit quis illum nemo reiciendis
+                            voluptatum eius consequuntur nihil neque esse dolores, tempore beatae deleniti aperiam
+                            officia nesciunt unde iste harum. Ad, hic? Iure mollitia vitae inventore delectus architecto
+                            quaerat quibusdam voluptate facere vel, accusamus natus? Iste, nam! Odio fugiat veniam animi
+                            alias quis? Porro, magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla ad alias nobis vero
+                            animi laudantium ea ipsa repellat aliquid fugiat consectetur deleniti ullam, maxime totam
+                            nesciunt earum rem corrupti perspiciatis quidem numquam! Cupiditate, dolore maiores? Sint
+                            consectetur repellendus animi porro laborum aliquam quas quidem impedit vel dolore, ipsum
+                            quos id deserunt rem voluptates voluptatibus temporibus beatae, sequi nemo, corporis ea! At
+                            excepturi beatae non deleniti iure earum similique dolores sit assumenda maxime id provident
+                            doloremque est, natus itaque, quae tenetur doloribus magnam! Qui commodi harum sint, ad
+                            voluptatibus consequuntur veniam ea. Aspernatur repellendus aliquid pariatur, quibusdam
+                            veniam tempora cum, nostrum iusto molestias commodi aperiam vel, tempore nemo optio unde? Ab
+                            doloremque, laboriosam neque voluptates numquam nobis esse saepe, odio praesentium ipsa modi
+                            laborum possimus officiis distinctio voluptatibus quo vero. Accusamus neque ea excepturi, ad
+                            quae omnis, provident numquam ratione quaerat eos tempora odio aperiam id. Deserunt quae
+                            ratione placeat perspiciatis facilis voluptas soluta fugit quis illum nemo reiciendis
+                            voluptatum eius consequuntur nihil neque esse dolores, tempore beatae deleniti aperiam
+                            officia nesciunt unde iste harum. Ad, hic? Iure mollitia vitae inventore delectus architecto
+                            quaerat quibusdam voluptate facere vel, accusamus natus? Iste, nam! Odio fugiat veniam animi
+                            alias quis? Porro, magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla ad alias nobis vero
+                            animi laudantium ea ipsa repellat aliquid fugiat consectetur deleniti ullam, maxime totam
+                            nesciunt earum rem corrupti perspiciatis quidem numquam! Cupiditate, dolore maiores? Sint
+                            consectetur repellendus animi porro laborum aliquam quas quidem impedit vel dolore, ipsum
+                            quos id deserunt rem voluptates voluptatibus temporibus beatae, sequi nemo, corporis ea! At
+                            excepturi beatae non deleniti iure earum similique dolores sit assumenda maxime id provident
+                            doloremque est, natus itaque, quae tenetur doloribus magnam! Qui commodi harum sint, ad
+                            voluptatibus consequuntur veniam ea. Aspernatur repellendus aliquid pariatur, quibusdam
+                            veniam tempora cum, nostrum iusto molestias commodi aperiam vel, tempore nemo optio unde? Ab
+                            doloremque, laboriosam neque voluptates numquam nobis esse saepe, odio praesentium ipsa modi
+                            laborum possimus officiis distinctio voluptatibus quo vero. Accusamus neque ea excepturi, ad
+                            quae omnis, provident numquam ratione quaerat eos tempora odio aperiam id. Deserunt quae
+                            ratione placeat perspiciatis facilis voluptas soluta fugit quis illum nemo reiciendis
+                            voluptatum eius consequuntur nihil neque esse dolores, tempore beatae deleniti aperiam
+                            officia nesciunt unde iste harum. Ad, hic? Iure mollitia vitae inventore delectus architecto
+                            quaerat quibusdam voluptate facere vel, accusamus natus? Iste, nam! Odio fugiat veniam animi
+                            alias quis? Porro, magnam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nulla ad alias nobis vero
+                            animi laudantium ea ipsa repellat aliquid fugiat consectetur deleniti ullam, maxime totam
+                            nesciunt earum rem corrupti perspiciatis quidem numquam! Cupiditate, dolore maiores? Sint
+                            consectetur repellendus animi porro laborum aliquam quas quidem impedit vel dolore, ipsum
+                            quos id deserunt rem voluptates voluptatibus temporibus beatae, sequi nemo, corporis ea! At
+                            excepturi beatae non deleniti iure earum similique dolores sit assumenda maxime id provident
+                            doloremque est, natus itaque, quae tenetur doloribus magnam! Qui commodi harum sint, ad
+                            voluptatibus consequuntur veniam ea. Aspernatur repellendus aliquid pariatur, quibusdam
+                            veniam tempora cum, nostrum iusto molestias commodi aperiam vel, tempore nemo optio unde? Ab
+                            doloremque, laboriosam neque voluptates numquam nobis esse saepe, odio praesentium ipsa modi
+                            laborum possimus officiis distinctio voluptatibus quo vero. Accusamus neque ea excepturi, ad
+                            quae omnis, provident numquam ratione quaerat eos tempora odio aperiam id. Deserunt quae
+                            ratione placeat perspiciatis facilis voluptas soluta fugit quis illum nemo reiciendis
+                            voluptatum eius consequuntur nihil neque esse dolores, tempore beatae deleniti aperiam
+                            officia nesciunt unde iste harum. Ad, hic? Iure mollitia vitae inventore delectus architecto
+                            quaerat quibusdam voluptate facere vel, accusamus natus? Iste, nam! Odio fugiat veniam animi
+                            alias quis? Porro, magnam.</p>
                     </div>
                 </div>
             </div>
             <footer class="dashboard-footer">
                 <!-- <div class="main-footer fixed-bottom position-relative"> -->
-                    <div class="d-sm-block ms-lg-5 ms-0" style="margin-left: 10px !important">
-                        <h6 style="font-size: 12px"><b>Versão</b> 1.0.0</h6>
-                        <h6 style="font-size: 12px"><strong>Direitos autorais &copy; 2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos
-                            os
-                            direitos
-                            reservados.</h6>
+                <div class="d-sm-block ms-lg-5 ms-0" style="margin-left: 10px !important">
+                    <div class="row">
+                        <span class="col-auto float-start" style="font-size: 12px"><strong>Direitos autorais &copy; 2023
+                                <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos reservados.
+                        </span>
+                        <span class="col-auto float-end" style="font-size: 12px"><b>Versão</b> 1.0.0</span>
                     </div>
+                </div>
                 <!-- </div> -->
             </footer>
         </div>
@@ -616,10 +754,14 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             $(".menu-toggle").click(function () {
                 if (mobileScreen.matches) {
                     $(".dashboard-nav").toggleClass("mobile-show");
-                    // $(".dashboard-footer").toggleClass("mobile-show");
                 } else {
                     $(".dashboard").toggleClass("dashboard-compact");
-                    // $(".dashboard-footer").toggleClass("dashboard-compact");
+                }
+                // mostra o footer somente quando o menu estiver aparecendo
+                if ($("#toolbar").offset().left == 0) {
+                    $(".dashboard-footer").hide();
+                } else {
+                    $(".dashboard-footer").show();
                 }
             });
         });
