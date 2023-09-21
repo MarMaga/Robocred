@@ -721,14 +721,22 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             </div>
             <footer class="dashboard-footer">
                 <!-- <div class="main-footer fixed-bottom position-relative"> -->
-                <div class="d-sm-block ms-lg-5 ms-0" style="margin-left: 10px !important">
-                    <div class="row">
-                        <span class="col-auto float-start" style="font-size: 12px"><strong>Direitos autorais &copy; 2023
-                                <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos reservados.
-                        </span>
-                        <span class="col-auto float-end" style="font-size: 12px"><b>Versão</b> 1.0.0</span>
+                <!-- <div class="d-sm-block ms-lg-5 ms-0" style="margin-left: 10px !important"> -->
+                    <div class="container-fluid">
+                        <div class="row row-cols-1">
+                            <div class="col float-start">
+                                <span style="font-size: 12px"><strong>Direitos autorais
+                                        &copy;
+                                        2023 <a href="http://adminlte.io">Maga</a>.</strong> Todos os direitos
+                                    reservados.
+                                </span>
+                            </div>
+                            <div class="col float-end">
+                                <span style="font-size: 12px"><b>Versão</b> 1.0.0</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                <!-- </div> -->
                 <!-- </div> -->
             </footer>
         </div>
