@@ -179,8 +179,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-nav header {
-            min-height: 84px;
-            padding: 8px 27px;
+            min-height: 64px;
+            padding: 0px 27px;
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
@@ -406,7 +406,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         }
 
         .dashboard-toolbar {
-            min-height: 54px;
+            min-height: 44px;
             background-color: #ffffff;
             display: -webkit-box;
             display: -webkit-flex;
@@ -416,7 +416,8 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             -webkit-align-items: center;
             -ms-flex-align: center;
             align-items: center;
-            padding: 8px 27px;
+            /* padding: 8px 27px; */
+            padding: 5px 0px;
             position: fixed;
             top: 0;
             right: 0;
@@ -619,21 +620,21 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
         <div class='dashboard-app'>
             <header class='dashboard-toolbar' id='toolbar'>
                 <div class="container-fluid">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 50px !important">
                         <!-- <div class="row col"> -->
                         <div class="col">
                             <div class="row">
-                                <div class="col ms-2">
+                                <div class="col-1 ms-2 me-1">
                                     <a href="#!" class="menu-toggle">
                                         <i class="fas fa-bars"></i>
                                     </a>
                                 </div>
-                                <div class="col">
+                                <div class="col-2">
                                     <li class="nav-item d-none d-sm-inline-block">
                                         <a href="../../index3.html" class="nav-link">Home</a>
                                     </li>
                                 </div>
-                                <div class="col">
+                                <div class="col-3">
                                     <li class="nav-item d-none d-sm-inline-block">
                                         <a href="#" class="nav-link">Contact</a>
                                     </li>
