@@ -373,6 +373,11 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             background: rgba(255, 255, 255, 0.2);
         }
 
+        .enfase:hover {
+            text-decoration: none;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
         .menu-toggle {
             position: relative;
             width: 42px;
@@ -622,7 +627,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 50px !important">
                         <!-- <div class="row col"> -->
-                        <div class="col">
+                        <!-- <div class="col"> -->
                             <div class="row">
                                 <div class="col-1 ms-2 me-1">
                                     <a href="#!" class="menu-toggle">
@@ -654,14 +659,53 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
                         <div class="col float-end text-end">
-                            <!-- Right navbar links -->
-                            <div class="col">
+                            <div class="d-flex float-end text-end">
+                                <!-- Right navbar links -->
+                                <ul class="navbar-nav ml-auto float-end me-2">
+                                    <li class="nav-item">
+                                        <a class="nav-link enfase" href="#" role="button"
+                                            data-bs-widget="control-sidebar" data-bs-slide="true"
+                                            style="text-decoration: none">
+                                            <i class="fas fa-th-large"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav ml-auto float-end me-2">
+                                    <!-- Notifications Dropdown Menu -->
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown"
+                                            style="text-decoration: none">
+                                            <i class="far fa-bell"></i>
+                                            <span class="badge bg-warning navbar-badge">15</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg">
+                                            <span class="dropdown-item dropdown-header">15 Notifications</span>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fas fa-envelope me-2"></i> 4 new messages
+                                                <span class="float-end text-muted text-sm">3 mins</span>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fas fa-users me-2"></i> 8 friend requests
+                                                <span class="float-end text-muted text-sm">12 hours</span>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item">
+                                                <i class="fas fa-file me-2"></i> 3 new reports
+                                                <span class="float-end text-muted text-sm">2 days</span>
+                                            </a>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <ul class="navbar-nav ml-auto float-end me-2">
                                     <!-- Messages Dropdown Menu -->
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown">
                                             <i class="far fa-comments"></i>
                                             <span class="badge bg-danger navbar-badge">3</span>
                                         </a>
@@ -737,49 +781,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col">
-                                <ul class="navbar-nav ml-auto float-end me-2">
-                                    <!-- Notifications Dropdown Menu -->
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-                                            <i class="far fa-bell"></i>
-                                            <span class="badge bg-warning navbar-badge">15</span>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg">
-                                            <span class="dropdown-item dropdown-header">15 Notifications</span>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="dropdown-item">
-                                                <i class="fas fa-envelope me-2"></i> 4 new messages
-                                                <span class="float-end text-muted text-sm">3 mins</span>
-                                            </a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="dropdown-item">
-                                                <i class="fas fa-users me-2"></i> 8 friend requests
-                                                <span class="float-end text-muted text-sm">12 hours</span>
-                                            </a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="dropdown-item">
-                                                <i class="fas fa-file me-2"></i> 3 new reports
-                                                <span class="float-end text-muted text-sm">2 days</span>
-                                            </a>
-                                            <div class="dropdown-divider"></div>
-                                            <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col">
-                                <ul class="navbar-nav ml-auto float-end me-2">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#" role="button" data-bs-widget="control-sidebar"
-                                            data-bs-slide="true">
-                                            <i class="fas fa-th-large"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
-                        <!-- </div> -->
                     </nav>
                 </div>
             </header>
