@@ -626,57 +626,99 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
             <header class='dashboard-toolbar' id='toolbar'>
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 50px !important">
-                        <!-- <div class="row col"> -->
-                        <!-- <div class="col"> -->
-                            <div class="row">
-                                <div class="col-1 ms-2 me-1">
-                                    <a href="#!" class="menu-toggle">
-                                        <i class="fas fa-bars"></i>
-                                    </a>
-                                </div>
-                                <div class="col-2">
-                                    <li class="nav-item d-none d-sm-inline-block">
+                        <div class="container">
+                            <div class="col-1 ms-2 me-1">
+                                <a href="#!" class="menu-toggle">
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a href="#!" class="nav-link menu-toggle">
+                                            <i class="fas fa-bars"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a href="../../index3.html" class="nav-link">Home</a>
                                     </li>
-                                </div>
-                                <div class="col-3">
-                                    <li class="nav-item d-none d-sm-inline-block">
+                                    <li class="nav-item">
                                         <a href="#" class="nav-link">Contact</a>
                                     </li>
-                                </div>
-                                <!-- SEARCH FORM -->
-                                <div class="col d-none d-sm-inline-block">
-                                    <form class="form-inline ml-3">
-                                        <div class="input-group input-group-sm">
-                                            <input class="form-control form-control-navbar" type="search"
-                                                placeholder="Search" aria-label="Search">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-navbar" type="submit">
-                                                    <i class="fas fa-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                </ul>
+                                <!-- Right navbar links -->
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link enfase" href="#" role="button"
+                                            data-bs-widget="control-sidebar" data-bs-slide="true">
+                                            <i class="fas fa-th-large"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown">
+                                            <i class="far fa-bell"></i>
+                                            <span class="badge bg-warning navbar-badge">15</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown">
+                                            <i class="far fa-comments"></i>
+                                            <span class="badge bg-danger navbar-badge">3</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-                        <!-- </div> -->
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- <header class='dashboard-toolbar' id='toolbar'>
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 50px !important">
+                        <div class="col-1 ms-2 me-1">
+                            <a href="#!" class="menu-toggle">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <li class="nav-item d-none d-sm-inline-block">
+                                <a href="../../index3.html" class="nav-link">Home</a>
+                            </li>
+                        </div>
+                        <div class="col-3">
+                            <li class="nav-item d-none d-sm-inline-block">
+                                <a href="#" class="nav-link">Contact</a>
+                            </li>
+                        </div>
+                        <div class="col d-none d-sm-inline-block">
+                            <form class="form-inline ml-3">
+                                <div class="input-group input-group-sm">
+                                    <input class="form-control form-control-navbar" type="search" placeholder="Pesquise por..."
+                                        aria-label="Search">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-navbar" type="submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                         <div class="col float-end text-end">
                             <div class="d-flex float-end text-end">
-                                <!-- Right navbar links -->
+                                
                                 <ul class="navbar-nav ml-auto float-end me-2">
                                     <li class="nav-item">
                                         <a class="nav-link enfase" href="#" role="button"
-                                            data-bs-widget="control-sidebar" data-bs-slide="true"
-                                            style="text-decoration: none">
+                                            data-bs-widget="control-sidebar" data-bs-slide="true">
                                             <i class="fas fa-th-large"></i>
                                         </a>
                                     </li>
                                 </ul>
                                 <ul class="navbar-nav ml-auto float-end me-2">
-                                    <!-- Notifications Dropdown Menu -->
+                                    
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown"
-                                            style="text-decoration: none">
+                                        <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown">
                                             <i class="far fa-bell"></i>
                                             <span class="badge bg-warning navbar-badge">15</span>
                                         </a>
@@ -703,7 +745,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                     </li>
                                 </ul>
                                 <ul class="navbar-nav ml-auto float-end me-2">
-                                    <!-- Messages Dropdown Menu -->
+                                    
                                     <li class="nav-item dropdown">
                                         <a class="nav-link enfase" href="#" role="button" data-bs-toggle="dropdown">
                                             <i class="far fa-comments"></i>
@@ -711,7 +753,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-end dropdown-menu-lg">
                                             <a href="#" class="dropdown-item">
-                                                <!-- Message Start -->
+                                                
                                                 <div class="media">
                                                     <img src="../../Template/dist/img/user1-128x128.jpg"
                                                         alt="User Avatar" class="img-size-50 mr-3 rounded-circle">
@@ -729,11 +771,11 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <!-- Message End -->
+                                                
                                             </a>
                                             <div class="dropdown-divider"></div>
                                             <a href="#" class="dropdown-item">
-                                                <!-- Message Start -->
+                                                
                                                 <div class="media">
                                                     <img src="../../Template/dist/img/user8-128x128.jpg"
                                                         alt="User Avatar" class="img-size-50 rounded-circle mr-3">
@@ -751,11 +793,11 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <!-- Message End -->
+                                                
                                             </a>
                                             <div class="dropdown-divider"></div>
                                             <a href="#" class="dropdown-item">
-                                                <!-- Message Start -->
+                                                
                                                 <div class="media">
                                                     <img src="../../Template/dist/img/user3-128x128.jpg"
                                                         alt="User Avatar" class="img-size-50 rounded-circle mr-3">
@@ -773,7 +815,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                                                         </p>
                                                     </div>
                                                 </div>
-                                                <!-- Message End -->
+                                                
                                             </a>
                                             <div class="dropdown-divider"></div>
                                             <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
@@ -784,7 +826,7 @@ include_once dirname(__DIR__, 2) . '/Resource/dataview/EquipamentoDV.php';
                         </div>
                     </nav>
                 </div>
-            </header>
+            </header> -->
             <div class='dashboard-content'>
                 <div class='container d-flex'>
                     <div class='card'>
